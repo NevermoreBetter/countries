@@ -8,11 +8,12 @@ function Preview(props) {
 
   return (
     <div
-      className="bg-gray-800 my-10 cursor-pointer rounded-md"
+      id="country"
+      className="bg-gray-700 my-10 text-white cursor-pointer rounded-md drop-shadow-xl duration-500  dark:bg-white dark:text-black dark:duration-500 "
       onClick={() => handleClick()}
     >
       <img src={country.flag} alt="" className="w-full mb-5 rounded-t-md" />
-      <div className="text-white pb-10 px-5">
+      <div className=" pb-10 px-5">
         <h2 className="font-bold text-xl mb-5">{country.name}</h2>
         <h3 className="font-semibold">
           Population: <span className="font-normal">{country.population}</span>

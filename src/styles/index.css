@@ -106,6 +106,7 @@ input[type="number"] {
   }
 }
 
-body {
-  background-color: var(--Very-Dark-Blue);
+.p-style {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
 }
