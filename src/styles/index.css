@@ -106,6 +106,16 @@ input[type="number"] {
   }
 }
 
+body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+.dark > body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
 .p-style {
   font-weight: 600;
   margin-bottom: 0.4rem;

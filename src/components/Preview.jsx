@@ -9,14 +9,23 @@ function Preview(props) {
   return (
     <div
       id="country"
-      className="bg-gray-700 my-10 text-white cursor-pointer rounded-md drop-shadow-xl duration-500  dark:bg-white dark:text-black dark:duration-500 "
+      className="bg-gray-700 my-10 text-white cursor-pointer rounded-md drop-shadow-xl w-11/12 md:w-[45%] lg:w-[22%] duration-500 min-h-[450px] dark:bg-white dark:text-black dark:duration-500 hover:scale-110"
       onClick={() => handleClick()}
     >
-      <img src={country.flag} alt="" className="w-full mb-5 rounded-t-md" />
-      <div className=" pb-10 px-5">
+      <div className="h-1/2 mb-4 ">
+        <img
+          src={country.flag}
+          alt=""
+          className="w-full object-cover mb-5 rounded-t-md h-full"
+        />
+      </div>
+      <div className=" px-5 md:pb-2">
         <h2 className="font-bold text-xl mb-5">{country.name}</h2>
         <h3 className="font-semibold">
-          Population: <span className="font-normal">{country.population}</span>
+          Population:{" "}
+          <span className="font-normal">
+            {country.population.toLocaleString("en-US")}
+          </span>
         </h3>
         <h3 className="font-semibold ">
           Region: <span className="font-normal">{country.region}</span>
