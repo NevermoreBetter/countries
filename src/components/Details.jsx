@@ -36,15 +36,15 @@ function Details(props) {
             <BiArrowBack />
             Back
           </button>
-          <div className="md:flex gap-x-32 items-center mt-12">
-            <div className="align-center mt-10 mb-8 md:w-[45%] object-fill h-full mt-0 mb-0">
+          <div className="lg:flex gap-x-32 items-center mt-12">
+            <div className="align-center mt-10 mb-8 lg:w-[45%] object-fill h-full lg:mt-0 lg:mb-0">
               <img
                 className="h-70 w-full md:h-full"
                 src={country.flag}
                 alt=""
               />
             </div>
-            <div className=" w-3/4 md:w-auto grid grid-rows-[auto_1fr_1fr] gap-x-40 grid-cols-2">
+            <div className=" w-3/4 lg:w-auto lg:grid grid-rows-[auto_1fr_1fr] gap-x-40 grid-cols-2">
               <div className="col-span-full">
                 <h2 className="font-bold text-xl mb-5">{country.name}</h2>
               </div>
