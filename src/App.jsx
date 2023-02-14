@@ -25,7 +25,6 @@ function App() {
     const res = await fetch("https://restcountries.com/v3.1/all");
     const data = await res.json();
     let c = [];
-    console.log(data);
     data.forEach((country) => {
       c.push({
         id: nanoid(),
